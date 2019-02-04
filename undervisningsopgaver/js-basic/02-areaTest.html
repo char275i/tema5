@@ -1,0 +1,31 @@
+<!DOGTYPE HTML>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Javascript</title>
+</head>
+<body>
+<script>
+    let længde = 3;
+    let bredde = 5;
+    let areal = længde * bredde;
+    let resultat;
+    //under 100, arealet er for lille
+    if (areal < 100){
+    resultat = "Arealet er for lille";
+}
+    //mellem 100 og 200. Arealet er ok
+    if (areal >= 100 && areal < 200){
+    resultat = "Arealet er OK";
+}
+     //mellem 100 og 200. Arealet er ok
+    if (areal >= 200){
+    resultat = "Arealet er for stort";
+}
+    //let resultat = `længde er ${længde} meter og bredde er ${bredde} meter. Arealet er ${areal} kvadratmeter`;
+    console.log(resultat);
+</script>
+
+</body>
+</html>
