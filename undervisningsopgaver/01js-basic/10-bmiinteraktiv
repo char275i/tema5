@@ -1,0 +1,45 @@
+<!DOGTYPE HTML>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <script>
+        let weight = prompt("angiv vægt");
+        let height = prompt("angiv højde");
+        let bmi = weight/ height * height;
+        bmi,klasse,
+        if(number(weight) && number(lenght)){
+        bmi=math.round( weight /math.pow(lenght/100,2));
+        
+        alert("bmi er " + bmi);
+        if(confirm("Vil du have din vægtklasse?"));-
+        }
+        let resultat = `Bmi'en er ${bmi}`;
+
+        //let resultat;
+        if (bmi < 19) {
+            resultat = "Advarsel ! Du er undervægtig";
+        }
+        if (bmi >= 20 && bmi < 25) {
+            resultat = "Din vægt er OK";
+        }
+        if (bmi >= 25 && bmi < 30) {
+            resultat = "Du er overvægtig";
+        }
+        if (bmi >= 30 && bmi < 35) {
+            resultat = "Du er ved at blive fed";
+        }
+        if (areal >= 40) {
+            resultat = "Advarsel! Du er al for fed";
+        }
+        console.log(resultat);
+
+    </script>
+</body>
+
+</html>

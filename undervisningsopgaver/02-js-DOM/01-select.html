@@ -1,0 +1,38 @@
+<!DOGTYPE HTML>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <syle>
+        li:nth-child(7){
+        background:#000;
+        }
+    </syle>
+</head>
+
+<body>
+<div id="content">
+    <div>
+        <a href="https://kea.dk/" >Kea</a>
+    </div>
+    <div>
+        <a href="https://github.com/">Githup</a>
+    </div>
+    <div>
+        <img src="http://helf-kea.dk/test/frog.png" alt="frø">
+    </div>
+</div>
+<script>
+    let content= document.querySelector("#content div");
+    let content= document.querySelector("#content div a");//første  a i første div
+    let content= document.querySelector("#content div + div a"); //behandklet som sibling
+    let content= document.querySelector("#content div + div + div img");
+    let content= document.querySelector("#content div:nth-child(2)");
+    let content= document.querySelector("#content div:nth-child(3) img");
+    console.log("content");
+    </script>
+</body>
+
+</html>
