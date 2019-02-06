@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A</title>
+    <style>
+        .typo {
+            font-family: monospace;
+            color: darkblue;
+            line-height: 150%;
+        }
+    </style>
+
+</head>
+
+<body>
+   <INPUT TYPE="button" VALUE="Reset tekst farve" onClick='tryk("p")'></INPUT>
+    <h3>En</h3>
+    <p id="p">Gochujang blue bottle iPhone quinoa, umami lumbersexual semiotics disrupt coloring book squid. Tilde banjo flannel PBR&B umami vape plaid occupy prism lumbersexual man braid. </p>
+    <h3>Lille</h3>
+    <p id="p">Fam before they sold out edison bulb, la croix sartorial cray poke yuccie copper mug ugh. Kickstarter yr tumblr synth.</p>
+    <h3>Bitte</h3>
+    <p id="p">Selvage authentic heirloom put a bird on it umami sustainable bitters meh bicycle rights kombucha af squid. DIY air plant drinking vinegar XOXO raw denim ethical semiotics. </p>
+    <h3>Smule</h3>
+    <p id="p">Roof party tumeric next level etsy church-key plaid. Fashion axe deep v tumeric kickstarter tofu narwhal direct trade. Hexagon gentrify pitchfork ethical echo park. </p>
+    <h3>Tekst</h3>
+    <p id="p">Hella unicorn pinterest organic. Hot chicken activated charcoal chia you probably haven't heard of them slow-carb fingerstache microdosing sartorial four loko etsy yr locavore. Edison bulb trust fund try-hard salvia direct trade tbh.let alle = document.querySelectorAll</p>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            console.log("DOM fully loaded and parsed");
+        });
+    </script>
+    <script>
+        let alle = document.querySelectorAll("#p");
+        document.getElementById("p").addEventListener("click", function() {
+            alle.forEach(element => {
+                element.style.color = "red";
+            });
+             function tryk(p) {
+            element.classList.remove("#p")
+        };
+        });
+    </script>
+    <SCRIPT>
+        function myFunction() {
+  var x = document.getElementById("myDIV").querySelectorAll(".example");
+  x[0].style.backgroundColor = "red";
+  x[1].style.backgroundColor = "red";
+}
+      </SCRIPT>
+</body>
+
+</html>
