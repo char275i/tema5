@@ -35,12 +35,15 @@
     </script>
     <script>
         let alle = document.querySelectorAll(".p");
-        alle.addEventListener("click", doSomething);
-            function doSomething() {
-                alle.forEach(element=>{
-                           element.style.color = "red";
-                             });
-                });
+        alle.forEach(element => {
+        element.style.backgroundColor = "#F00";
+            element.addEventListener("click", ()=>{
+            element.style.backgroundColor = "#123456";
+        });
+        })
+        function skiftFarve(){
+           this.style.backgroundColor ="#123456"
+        }
     </script>
 </body>
 
