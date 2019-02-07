@@ -6,29 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript</title>
     <style>
-        li:nth-child(7){
-        background:#000;
+        li:nth-child(7) {
+            background: #000;
         }
+
     </style>
 </head>
+
 <body>
-<div id="content">
-    <li>her er mit første</li>
-    <li>her er mit første</li>
-    <li>her er mit første</li>
-    <li>her er mit første</li>
-    <li>her er mit første</li>
-    <li>her er mit første</li>
-</div>
-<script>
-   function doSomething(){
-    let first= document.querySelector("li:first-child");
-    first.innerHTML = "<h1>Her står noget</h1> "
-    let frog = "http://helf-kea.dk/test/frog.png";
-    document.querySelector("li").innerHTML = `<img src=${frog} alt="frø">`;
-    }
-    document.addEventlistener("DOMContentLoaded" doSomething);
-    //console.log("content");
+    <div id="content">
+        <li>her er mit første</li>
+        <li>her er mit første</li>
+        <li>her er mit første</li>
+        <li>her er mit første</li>
+        <li>her er mit første</li>
+        <li>her er mit første</li>
+    </div>
+    <script>
+        function doSomething() {
+            let first = document.querySelector("li:first-child");
+            first.innerHTML = "<h1>Her står noget</h1> "
+            let frog = "http://helf-kea.dk/test/frog.png";
+            document.querySelector("li").innerHTML = `<img src=${frog} alt="frø">`;
+        }
+        document.addEventlistener("DOMContentLoaded"
+            doSomething);
+        //console.log("content");
+        let element = document.querySelector("#info");
+
+        element.addEventListener("click", doSomething);
+
+        function doSomething() {
+            // det der skal ske
+        }
+
     </script>
 </body>
 

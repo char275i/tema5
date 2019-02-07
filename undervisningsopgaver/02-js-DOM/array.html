@@ -10,22 +10,42 @@
             color: burlywood;
         }
 
-        #display {
+        .boks {
             width: 20vw;
-            height: 20vw;
+            height: 2vw;
             border: 1px solid silver;
             margin: 7vw;
             padding: 1vw;
         }
-        /*********************/
     </style>
 
 </head>
 
 <body>
-    <div id="display"></div>
+    <div class="boks"></div>
+    <div class="boks"></div>
+    <div class="boks"></div>
+    <div class="boks"></div>
+    <div class="boks"></div>
+    <div class="boks"></div>
+    <div class="boks"></div>
+    <div class="boks"></div>
+    <div class="boks"></div>
 
     <script>
+        let bokse = document.querySelectorAll(".boks");
+
+        bokse.forEach(elm => {
+            elm.style.background = "#f00";
+            elm.addEventListener("click", () => {
+                elm.style.background = "#123456"
+            })
+        })
+
+        function skiftFarve() {
+            //console.log(this);
+            this.style.background = "#123456";
+        }
     </script>
 </body>
 
